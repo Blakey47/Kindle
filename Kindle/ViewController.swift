@@ -8,18 +8,26 @@
 
 import UIKit
 
+class Book {
+    var title: String
+    var author: String
+    
+    init(title: String, author: String) {
+        self.title = title
+        self.author = author
+    }
+}
+
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        view.backgroundColor = .red
+        //can provide custom code here
+        
+        
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
 
 }
 
