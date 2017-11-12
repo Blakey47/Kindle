@@ -6,16 +6,18 @@
 //  Copyright © 2017 Darragh. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 class Book {
     var title: String
     var author: String
+    let image: UIImage
     let pages: [Page]
     
-    init(title: String, author: String, pages: [Page]) {
+    init(title: String, author: String, image: UIImage, pages: [Page]) {
         self.title = title
         self.author = author
+        self.image = image
         self.pages = pages
     }
 }
