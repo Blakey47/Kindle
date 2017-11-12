@@ -14,7 +14,7 @@ class BookPagerController: UICollectionViewController, UICollectionViewDelegateF
         super.viewDidLoad()
         collectionView?.backgroundColor = .white
         
-        collectionView?.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "cellId")
+        collectionView?.register(PageCell.self, forCellWithReuseIdentifier: "cellId")
         
         navigationItem.title = "Book"
         
@@ -36,11 +36,11 @@ class BookPagerController: UICollectionViewController, UICollectionViewDelegateF
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cellId", for: indexPath)
         
-        if indexPath.item % 2 == 0 {
-            cell.backgroundColor = .red
-        } else {
-            cell.backgroundColor = .blue
-        }
+//        if indexPath.item % 2 == 0 {
+//            cell.backgroundColor = .red
+//        } else {
+//            cell.backgroundColor = .blue
+//        }
         return cell
     }
 }
