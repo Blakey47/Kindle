@@ -62,10 +62,10 @@
 			children = (
 				A76547611FB7BA0D0045C6B3 /* AppDelegate.swift */,
 				A76547631FB7BA0D0045C6B3 /* ViewController.swift */,
-				A76547731FB7CABD0045C6B3 /* Models.swift */,
 				A76547681FB7BA0D0045C6B3 /* Assets.xcassets */,
 				A765476A1FB7BA0D0045C6B3 /* LaunchScreen.storyboard */,
 				A765476D1FB7BA0D0045C6B3 /* Info.plist */,
+				A76547731FB7CABD0045C6B3 /* Models.swift */,
 				A78E2AD01FB86D90001F1FB1 /* BookCell.swift */,
 				A78E2AD21FB881F8001F1FB1 /* BookPagerController.swift */,
 				A78E2AD41FB8A12A001F1FB1 /* PageCell.swift */,
