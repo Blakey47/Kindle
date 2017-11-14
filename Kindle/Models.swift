@@ -11,20 +11,13 @@ import UIKit
 class Book {
     var title: String
     var author: String
-    let image: UIImage
     let pages: [Page]
-    
-    init(title: String, author: String, image: UIImage, pages: [Page]) {
-        self.title = title
-        self.author = author
-        self.image = image
-        self.pages = pages
-    }
+    let coverImageUrl: String
     
     init(dictionary: [String: Any]) {
         self.title = dictionary["title"] as? String ?? ""
         self.author = dictionary["author"] as? String ?? ""
-        self.image = #imageLiteral(resourceName: "steve_jobs")
+        self.coverImageUrl = dictionary["coverImageUrl"] as? String ?? ""
         
         var bookPages = [Page]()
         
